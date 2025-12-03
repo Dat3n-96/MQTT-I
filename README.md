@@ -30,6 +30,32 @@ configurable hash algorithm (default: SHA-256).
 python -m pip install -e .
 ```
 
+**Environment setup (recommended)**
+
+Create an isolated virtual environment and install the project's requirements:
+
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+macOS / Linux (bash):
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+If you prefer `pytest` locally, the `requirements.txt` file already includes
+`pytest` so tests can be run with `pytest` once the virtual environment is
+activated.
+
 **Quick Example**
 - **Encoding a packet**:
 
